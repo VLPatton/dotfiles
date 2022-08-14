@@ -1,0 +1,8 @@
+# My Dotfiles for NeoVim :)
+This repo contains my dotfiles for NeoVim, which can be found in many package managers as `nvim` (such as my personal favorite, Arch Linux's `pacman`). It also requires `vim-plug` which can be found on Github. I also use a dedicated Alacritty terminal as a NeoVim where I launch it and it immediately goes into nvim at `$HOME`, from which I can navigate to a project (which I usually keep in my `~/Desktop` folder).
+## My Overall Config/Setup
+I use Arch btw. My DE is a minimal KDE Plasma running on X11 and `lightdm` as the Display Manager/GTK greeter. I recently switched from VS Code (the open source one) to NeoVim for editing my code, which is mostly C and C++ compiled exclusively by GCC. The hardware I use depends one what I'm doing/where I'm at, since I have both a desktop and laptop. The desktop (called `RagnarLodbrok`) is an overclocked Core i7-10700K with dual RTX 3080s (one of them is passed through to a VM for gaming, and one is for the host, but this is likely to change in the future) and 16 GB of RAM. My laptop (named `IvarTheBoneless`) is slightly faster for CPU, running a Ryzen 9 5900HX, but has an RTX 3050Ti Mobile, and it also has 16 GB of RAM.
+## How to Install
+Clone the repo through your favorite method, and copy the files into `$HOME/.config/`, except for this file and the Makefile of course. The other, and probably way easier method is to run `make install` **as a regular user**. This is important, or the config may not work properly.
+## Licensing
+The files in this repo are Public Domain, anyone is free to edit and post changes to the files presented in this repo.
