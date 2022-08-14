@@ -45,9 +45,11 @@ set encoding=utf8
 set history=5000
 set clipboard=unnamedplus
 
-	" open NERDTree automatically
+	" open NERDTree automatically and make sure it stays open
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree
+autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 let g:NERDTreeGitStatusWithFlags = 1
 "let g:WebDevIconsUnicodeDecorateFolderNodes = 1
