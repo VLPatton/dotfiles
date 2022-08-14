@@ -1,5 +1,8 @@
- shell:
+shell:
   program: /bin/bash
   args:
     - -c
     - nvim
+font:
+  normal:
+    family: SourceCodePro Mono
