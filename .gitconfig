@@ -5,4 +5,4 @@
 [gpg]
     format = ssh
 [core]
-    editor = /usr/bin/nvr
+    editor = /usr/bin/nvr -cc split --remote-wait
