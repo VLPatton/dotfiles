@@ -4,3 +4,5 @@
     signingkey = ~/.ssh/id_ed25519.pub
 [gpg]
     format = ssh
+[core]
+    editor = /usr/bin/nvr
