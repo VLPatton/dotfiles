@@ -6,3 +6,5 @@
     format = ssh
 [core]
     editor = /usr/bin/nvr -cc split --remote-wait
+[commit]
+    gpgsign = true
