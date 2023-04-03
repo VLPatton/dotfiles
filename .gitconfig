@@ -1,7 +1,7 @@
 [user]
-    email = caes55.patton@gmail.com
+    email = vlpatton@vlpatton.gay
     name = Harper Londyn
-    signingkey = ~/.ssh/id_ed25519.pub
+    signingkey = ~/.ssh/id_vlpatton_ed25519.pub
 [gpg]
     format = ssh
 [core]
