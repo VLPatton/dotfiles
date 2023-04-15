@@ -10,11 +10,6 @@ vim.keymap.set("n", "<leader>tr", vim.cmd.term)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.keymap.set('n', '<leader>dl', ':bd!<CR>')
 
-vim.keymap.set('n', 'e', 'k')
-vim.keymap.set('n', 's', 'h')
-vim.keymap.set('n', 'd', 'j')
-vim.keymap.set('n', 'f', 'l')
-
 vim.keymap.set('n', '<Tab>', 'gt')
 vim.keymap.set('n', '<S-Tab>', 'gT')
 vim.keymap.set('n', '<leader>tt', function() 
@@ -22,3 +17,5 @@ vim.keymap.set('n', '<leader>tt', function()
     vim.cmd.Ex()
 end)
 vim.keymap.set('n', '<leader>tx', ':tabc<CR>')
+
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
