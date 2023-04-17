@@ -20,8 +20,6 @@ return require('packer').startup(function(use)
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-    use 'neovim/nvim-lspconfig'
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
@@ -47,4 +45,6 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+
+    use 'ThePrimeagen/harpoon'
 end)
