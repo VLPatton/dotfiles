@@ -16,4 +16,9 @@ precmd() { vcs_info }
 
 zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%n%f %F{green}%~%f %F{red}${vcs_info_msg_0_}%f%# '
+
+if [ -n "$SSH_CLIENT" ]; then
+    PROMPT='%F{#11D}%n@%m%f %F{#1D1}%~%f %F{#D11}${vcs_info_msg_0_}%f%# '
+else
+    PROMPT='%F{#11D}%n%f %F{#1D1}%~%f %F{#D11}${vcs_info_msg_0_}%f%# '
+fi
