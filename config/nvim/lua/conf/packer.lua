@@ -47,4 +47,15 @@ return require('packer').startup(function(use)
     }
 
     use 'ThePrimeagen/harpoon'
+
+    use 'ThePrimeagen/vim-be-good'
+
+    use 'VLPatton/frcpal.nvim'
+    
+    use {
+        'nvim-neorg/neorg',
+        run = ":Neorg sync-parsers"
+    }
+
+    use 'nvim-tree/nvim-web-devicons'
 end)

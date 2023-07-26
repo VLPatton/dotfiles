@@ -22,3 +22,5 @@ if [ -n "$SSH_CLIENT" ]; then
 else
     PROMPT='%F{#11D}%n%f %F{#1D1}%~%f %F{#D11}${vcs_info_msg_0_}%f%# '
 fi
+
+export PATH=$PATH:/home/vlpatton/.cargo/bin
