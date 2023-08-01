@@ -1,0 +1,16 @@
+UXTerm.vt100.locale: true
+UXTerm.termName: uxterm-256color
+UXTerm.vt100.faceName: NotoMono Nerd Font Mono:antialias=true
+UXTerm.vt100.faceSize: 14
+UXTerm.vt100.renderFont: true
+XTerm.vt100.locale: true
+XTerm.termName: xterm-256color
+XTerm.vt100.faceName: Source Code Pro:antialias=true
+XTerm.vt100.faceSize: 14
+XTerm.vt100.renderFont: true
+*foreground: white
+*background: black
+UXTerm.vt100.color0: rgb:00/00/00
+UXTerm.vt100.color15: rgb:ef/ef/ef
+XTerm.vt100.color0: rgb:00/00/00
+XTerm.vt100.color15: rgb:df/df/df

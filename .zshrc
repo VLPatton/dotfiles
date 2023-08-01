@@ -24,3 +24,4 @@ else
 fi
 
 export PATH=$PATH:/home/vlpatton/.cargo/bin
+alias ls="ls --color"

@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
 		requires = { { 'nvim-lua/plenary.nvim' } } 
 	})
 
+    --[[
 	use({
 		'rose-pine/neovim',
 		as = 'rose-pine',
@@ -17,6 +18,17 @@ return require('packer').startup(function(use)
 			vim.cmd('colorscheme rose-pine')
 		end
 	})
+    use({
+        "catppuccin/nvim",
+        as = "catppuccin",
+        config = function()
+            require('catppuccin').setup({
+                flavour = "mocha"
+            })
+            vim.cmd("colorscheme catppuccin")
+        end
+    })
+    --]]
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 

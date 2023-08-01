@@ -7,6 +7,7 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader><leader>y", [[gg"+yG]])
 vim.keymap.set("n", "<leader><leader>d", [[ggdG]])
+vim.keymap.set("n", "<leader>=", "gg=G")
 
 vim.keymap.set('n', '<leader>dd', ':bd!<CR>')
 
